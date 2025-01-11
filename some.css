@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, purple 50%, pink 50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscription {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-around;
+}
+
+.plan {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 30px; /* Add margin at the bottom to create space between plans */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .plan {
+        width: 100%; /* Set the width to 100% on smaller screens */
+    }
+}
+
+#basic.plan {
+    background-color: pink;
+}
+
+#advance.plan {
+    background-color: purple; 
+    color: pink;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.plan p {
+    font-size: 18px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.plan ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0a16;
+}
+
+/* Your existing CSS code */
+
+.plan:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.plan {
+    /* Your existing styles */
+    cursor: pointer;
+}
+
+/* Rest of your CSS code */
+/* Your existing CSS code */
+
+

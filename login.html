@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url("my2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(14, 149, 173);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            Width : 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="loginForm">
+        <h3>Login in Temp Converter</h3>
+        <input type="text" id="username" placeholder="Username, or Email Address" required>
+        <input type="password" id="password" placeholder="Password" maxlength="8" minlength="8">
+        <button type="submit">Log in</button><br><br>
+        <a href="#">Forgot Password?</a>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var username = document.getElementById('username').value.trim();
+            var password = document.getElementById('password').value.trim();
+
+            if (username === '' || password === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            this.submit();
+        });
+    </script>
+</body>
+</html>
